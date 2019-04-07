@@ -7,12 +7,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bmi">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/colorBest">
 
         <TextView
             android:id="@+id/tvHeight"
@@ -22,7 +24,8 @@
             android:layout_weight="1"
             android:hint="Enter your height"
             android:layout_margin="20dp"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+           />
 
         <EditText
             android:id="@+id/etHeight"
@@ -38,7 +41,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/colorBest"
+        >
 
         <TextView
             android:id="@+id/tvWeight"
@@ -48,7 +53,8 @@
             android:layout_weight="1"
             android:hint="Enter your weight"
             android:layout_margin="20dp"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            />
 
         <EditText
             android:id="@+id/etWeight"
@@ -67,14 +73,15 @@
             android:layout_height="wrap_content"
             android:text="Compute BMI"
             android:layout_margin="70dp"
-            android:background=""/>
+            />
 
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <TextView
             android:id="@+id/tvBMI"
